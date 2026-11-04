@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agroedutourism Kandri Village | Segera Hadir</title>
+<meta name="description" content="Mohon maaf, situs Agroedutourism Kandri Village sedang dalam pengerjaan. Desa wisata edukatif di Gunungpati, Semarang, dengan akuaponik dan PLTS.">
+<meta name="theme-color" content="#023047">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Agroedutourism Kandri Village | Segera Hadir">
+<meta property="og:description" content="Situs desa wisata edukatif Kandri, Gunungpati, Semarang, sedang dalam pengerjaan. Segera hadir.">
+<meta property="og:locale" content="id_ID">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Ccircle cx='20' cy='20' r='16' fill='%23FFB703' stroke='%23023047' stroke-width='3'/%3E%3Cpath d='M8 24q6-6 12 0t12 0' fill='none' stroke='%23219EBC' stroke-width='3'/%3E%3C/svg%3E">
+
+<script>
+(function () {
+  var theme = 'dark';
+  try {
+    var saved = localStorage.getItem('kandri-theme');
+    if (saved === 'dark' || saved === 'light') { theme = saved; }
+    else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) { theme = 'light'; }
+  } catch (e) {}
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --sky: #8ECAE6;
+  --teal: #219EBC;
+  --navy: #023047;
+  --amber: #FFB703;
+  --orange: #FB8500;
+
+  --bg: #E9F5FA;
+  --surface: #FFFFFF;
+  --ink: #023047;
+  --muted: #2F5870;
+  --line: #023047;
+  --shadow: #023047;
+  --hero-shadow: #FFB703;
+  --stripe: rgba(2, 48, 71, 0.10);
+}
+:root[data-theme="dark"] {
+  --bg: #023047;
+  --surface: #0A4262;
+  --ink: #E9F5FA;
+  --muted: #A9D4E8;
+  --line: #8ECAE6;
+  --shadow: #219EBC;
+  --hero-shadow: #FB8500;
+  --stripe: rgba(255, 255, 255, 0.07);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: -webkit-flex; display: flex;
+  -webkit-flex-direction: column; flex-direction: column;
+  background: var(--bg);
+  background-image: repeating-linear-gradient(135deg, var(--stripe), var(--stripe) 14px, transparent 14px, transparent 28px);
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+p { margin: 0 0 1em; }
+h1, h2, h3 { margin: 0; }
+.display, h1, h2 {
+  font-family: 'Bebas Neue', Impact, 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.95;
+}
+
+.wrap { max-width: 1040px; margin: 0 auto; padding-left: 20px; padding-right: 20px; }
+
+a:focus-visible, button:focus-visible { outline: 4px solid var(--orange); outline-offset: 3px; }
+
+/* Logo mitra */
+.partners { background: #FFFFFF; border-bottom: 3px solid var(--line); }
+.partners .wrap { display: -webkit-flex; display: flex; -webkit-justify-content: center; justify-content: center; padding-top: 8px; padding-bottom: 8px; }
+.partners img { display: block; height: 54px; width: auto; }
+
+/* Bilah atas */
+.topbar { border-bottom: 3px solid var(--line); background: var(--bg); }
+.topbar .wrap { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: space-between; justify-content: space-between; min-height: 68px; }
+.brand { display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; font-family: 'Bebas Neue', Impact, sans-serif; font-size: 26px; letter-spacing: .02em; line-height: 1; }
+.brand svg { margin-right: 10px; }
+.icon-btn {
+  height: 48px; min-width: 48px; padding: 0 14px;
+  display: -webkit-flex; display: flex; -webkit-align-items: center; align-items: center; -webkit-justify-content: center; justify-content: center;
+  background: var(--surface); color: var(--ink);
+  border: 3px solid var(--line); box-shadow: 3px 3px 0 var(--shadow);
+  font-family: inherit; font-size: 15px; font-weight: 800; cursor: pointer;
+}
+.icon-btn:active { -webkit-transform: translate(2px, 2px); transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--shadow); }
+.icon-btn svg { display: block; }
+.i-sun { display: none; }
+:root[data-theme="dark"] .i-sun { display: block; }
+:root[data-theme="dark"] .i-moon { display: none; }
+.theme-label { margin-left: 8px; }
+
+/* Isi */
+main { -webkit-flex: 1 0 auto; flex: 1 0 auto; padding: 44px 0 56px; }
+.layout { display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; -webkit-align-items: center; align-items: center; margin: -16px; }
+.layout > * { margin: 16px; min-width: 0; }
+.copy { -webkit-flex: 1 1 380px; flex: 1 1 380px; }
+.art-col { -webkit-flex: 1 1 340px; flex: 1 1 340px; }
+
+.badge {
+  display: inline-block; margin-bottom: 18px; padding: 6px 14px;
+  background: var(--amber); color: var(--navy);
+  border: 3px solid var(--line); box-shadow: 4px 4px 0 var(--shadow);
+  font-weight: 800; font-size: 14px; letter-spacing: .04em; text-transform: uppercase;
+  -webkit-transform: rotate(-2deg); transform: rotate(-2deg);
+}
+h1 { font-size: 84px; margin-bottom: 22px; text-shadow: 4px 4px 0 var(--hero-shadow); }
+.lead { font-size: 20px; line-height: 1.6; max-width: 52ch; }
+.muted { color: var(--muted); }
+
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  border: 3px solid var(--line);
+  background: var(--amber);
+  color: var(--navy);
+  font-family: inherit; font-size: 16px; font-weight: 800; line-height: 1.2;
+  text-decoration: none; text-align: center; cursor: pointer;
+  box-shadow: 4px 4px 0 var(--shadow);
+  -webkit-transition: -webkit-transform .12s, box-shadow .12s;
+  transition: transform .12s, box-shadow .12s;
+}
+.btn:hover { -webkit-transform: translate(-2px, -2px); transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--shadow); }
+.btn-orange { background: var(--orange); }
+.btn-row { margin: 26px -8px -8px; }
+.btn-row .btn { margin: 0 8px 14px; }
+
+/* Bingkai ilustrasi */
+.frame {
+  position: relative;
+  border: 3px solid var(--line);
+  box-shadow: 8px 8px 0 var(--shadow);
+  background: var(--sky);
+  overflow: hidden;
+}
+.frame:before { content: ""; display: block; padding-top: 80%; }
+.frame svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; }
+.o { stroke: #023047; stroke-width: 4; stroke-linejoin: round; stroke-linecap: round; }
+.sticker {
+  position: absolute; right: 14px; bottom: 14px;
+  -webkit-transform: rotate(-6deg); transform: rotate(-6deg);
+  background: var(--orange); color: var(--navy);
+  border: 3px solid #023047; box-shadow: 4px 4px 0 #023047;
+  padding: 8px 16px; font-weight: 800; line-height: 1.2; text-align: center; font-size: 14px;
+}
+.sticker b { display: block; font-family: 'Bebas Neue', Impact, sans-serif; font-weight: 400; font-size: 30px; line-height: 1; letter-spacing: .02em; }
+
+/* Bilah progres */
+.progress { margin-top: 30px; }
+.progress-label { display: -webkit-flex; display: flex; -webkit-justify-content: space-between; justify-content: space-between; font-weight: 800; font-size: 15px; margin-bottom: 8px; }
+.bar {
+  height: 28px; border: 3px solid var(--line); background: var(--surface);
+  box-shadow: 4px 4px 0 var(--shadow); overflow: hidden;
+}
+.bar i {
+  display: block; height: 100%; width: 68%;
+  background-color: var(--amber);
+  background-image: repeating-linear-gradient(135deg, rgba(2,48,71,.28), rgba(2,48,71,.28) 10px, transparent 10px, transparent 20px);
+  background-size: 28px 28px;
+  border-right: 3px solid var(--line);
+  -webkit-animation: slide 1.2s linear infinite; animation: slide 1.2s linear infinite;
+}
+@-webkit-keyframes slide { from { background-position: 0 0; } to { background-position: 28px 0; } }
+@keyframes slide { from { background-position: 0 0; } to { background-position: 28px 0; } }
+
+/* Kartu info */
+.cards { display: -webkit-flex; display: flex; -webkit-flex-wrap: wrap; flex-wrap: wrap; margin: 44px -10px -10px; }
+.card {
+  margin: 10px; -webkit-flex: 1 1 260px; flex: 1 1 260px; min-width: 0;
+  padding: 22px; border: 3px solid var(--line); box-shadow: 6px 6px 0 var(--shadow);
+  color: var(--navy);
+}
+.card h2 { font-size: 34px; margin-bottom: 8px; }
+.card p { margin: 0; }
+.c-teal { background: var(--teal); }
+.c-amber { background: var(--amber); }
+.c-orange { background: var(--orange); }
+
+/* Kaki */
+.site-footer { background: #023047; color: #E9F5FA; border-top: 6px solid var(--amber); padding: 30px 0; text-align: center; }
+:root[data-theme="dark"] .site-footer { background: #0A4262; border-top-color: var(--sky); }
+.site-footer p { margin: 0; font-weight: 700; }
+
+@media (max-width: 860px) {
+  body { font-size: 16px; }
+  h1 { font-size: 64px; }
+  main { padding: 32px 0 44px; }
+  .theme-label { display: none; }
+}
+@media (max-width: 480px) {
+  .wrap { padding-left: 16px; padding-right: 16px; }
+  h1 { font-size: 52px; }
+  .lead { font-size: 18px; }
+  .brand { font-size: 22px; }
+  .partners img { height: 42px; }
+  .card { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bar i { -webkit-animation: none; animation: none; }
+  .btn { -webkit-transition: none; transition: none; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Logo mitra: simpan berkas gambar logo dengan nama logo-mitra.png di folder yang sama.
+     Jika berkas belum ada, bagian ini otomatis disembunyikan. -->
+<div class="partners" id="partners">
+  <div class="wrap">
+    <img src="logo-mitra.png" alt="Pertamina Foundation, Universitas Ivet, dan Sobat Bumi Unisvet" onerror="document.getElementById('partners').style.display='none'">
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand">
+      <svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="16" fill="#FFB703" stroke="currentColor" stroke-width="3"/><path d="M8 24q6-6 12 0t12 0" fill="none" stroke="#219EBC" stroke-width="3"/></svg>
+      Kandri
+    </div>
+    <button type="button" class="icon-btn" id="themeToggle" aria-pressed="true" aria-label="Ganti ke mode terang">
+      <svg class="i-moon" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" fill="currentColor"/></svg>
+      <svg class="i-sun" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></g></svg>
+      <span class="theme-label" id="themeLabel">Mode terang</span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="layout">
+      <div class="copy">
+        <span class="badge">Segera hadir</span>
+        <h1>Mohon maaf, web sedang dalam pengerjaan</h1>
+        <p class="lead">Agroedutourism Kandri Village, desa wisata edukatif di Gunungpati, Semarang, sedang menyiapkan halaman terbaiknya. Kami akan segera kembali dengan cerita akuaponik, PLTS, dan produk desa.</p>
+
+        <div class="progress" role="img" aria-label="Pengerjaan situs berjalan sekitar enam puluh delapan persen">
+          <div class="progress-label"><span>Pengerjaan situs</span><span>Hampir siap</span></div>
+          <div class="bar"><i></i></div>
+        </div>
+
+        <div class="btn-row">
+          <a class="btn" href="https://maps.app.goo.gl/vBs4EySKQ58R2T78A" target="_blank" rel="noopener">Lihat lokasi di peta</a>
+          <button type="button" class="btn btn-orange" id="reloadBtn">Muat ulang nanti</button>
+        </div>
+      </div>
+
+      <div class="art-col">
+        <div class="frame" role="img" aria-label="Ilustrasi desa dengan matahari, panel surya, dan kolam akuaponik">
+          <svg viewBox="0 0 400 320" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+            <rect width="400" height="320" fill="#8ECAE6"/>
+            <g class="o">
+              <circle cx="318" cy="70" r="26" fill="#FFB703"/>
+              <path d="M-10 196 Q60 120 140 172 T270 156 T410 190 V330 H-10Z" fill="#219EBC"/>
+              <path d="M-10 240 Q100 182 205 222 T410 214 V330 H-10Z" fill="#7CB342"/>
+              <path d="M20 274 Q200 240 390 274" fill="none"/>
+              <rect x="40" y="196" width="58" height="34" fill="#FFF4D6"/>
+              <path d="M32 198 L69 168 L106 198Z" fill="#FB8500"/>
+              <rect x="60" y="208" width="16" height="22" fill="#023047"/>
+              <path d="M140 232 L172 168 H262 L232 232Z" fill="#219EBC"/>
+              <path d="M150 210H248 M160 190H255 M200 168L172 232 M232 168L204 232" fill="none" stroke-width="3"/>
+              <path d="M186 232V258 M228 232V258 M170 258H246" fill="none"/>
+              <rect x="276" y="214" width="96" height="50" rx="4" fill="#8ECAE6"/>
+              <path d="M296 240 Q310 226 326 240 Q310 254 296 240Z" fill="#FB8500"/>
+              <path d="M326 240 L336 232 V248Z" fill="#FB8500"/>
+              <path d="M290 214 Q280 192 292 178 Q306 194 290 214Z" fill="#7CB342"/>
+              <path d="M326 214 Q316 188 330 170 Q346 190 326 214Z" fill="#4E8F2F"/>
+              <path d="M360 214 Q350 194 362 182 Q374 196 360 214Z" fill="#7CB342"/>
+            </g>
+            <!-- Rambu pengerjaan -->
+            <g class="o">
+              <path d="M110 300 V262" fill="none" stroke-width="6"/>
+              <rect x="64" y="244" width="92" height="30" rx="3" fill="#FFB703"/>
+              <path d="M76 244 L96 274 M100 244 L120 274 M124 244 L144 274" fill="none" stroke-width="5"/>
+            </g>
+          </svg>
+          <div class="sticker"><b>Desa wisata</b>edukatif</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card c-teal">
+        <h2>Akuaponik</h2>
+        <p>Ikan dan sayur tumbuh dalam satu sistem air di RT 09 RW IV.</p>
+      </div>
+      <div class="card c-amber">
+        <h2>PLTS</h2>
+        <p>Panel surya menggerakkan pompa air kebun secara hemat dan ramah lingkungan.</p>
+      </div>
+      <div class="card c-orange">
+        <h2>Produk desa</h2>
+        <p>Mie hijau pakcoy, abon ayam, dan teh daun mint dari warga Kandri.</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Created by Tim Desa Energi Berdikari Sobat Bumi - Universitas Ivet Semarang<br>Tahun 2026</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+  var root = document.documentElement;
+  var btn = document.getElementById('themeToggle');
+  var label = document.getElementById('themeLabel');
+  var meta = document.querySelector('meta[name="theme-color"]');
+
+  function apply(theme, save) {
+    root.setAttribute('data-theme', theme);
+    var dark = theme === 'dark';
+    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    btn.setAttribute('aria-label', dark ? 'Ganti ke mode terang' : 'Ganti ke mode gelap');
+    label.firstChild.nodeValue = dark ? 'Mode terang' : 'Mode gelap';
+    if (meta) { meta.setAttribute('content', dark ? '#023047' : '#E9F5FA'); }
+    if (save) { try { localStorage.setItem('kandri-theme', theme); } catch (e) {} }
+  }
+  apply(root.getAttribute('data-theme') === 'light' ? 'light' : 'dark', false);
+  btn.addEventListener('click', function () {
+    apply(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark', true);
+  });
+
+  document.getElementById('reloadBtn').addEventListener('click', function () {
+    window.location.reload();
+  });
+})();
+</script>
+</body>
+</html>
